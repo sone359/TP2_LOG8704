@@ -983,7 +983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CameraToFace: {fileID: 0}
   m_ObjectPrefabs:
-  - {fileID: 503222116013560536, guid: 96aeffe1bfd1d4b04908e4a5d7e36d36, type: 3}
+  - {fileID: 4715788560951371861, guid: a91afe707f65b234ca1a94658ac7956e, type: 3}
   - {fileID: 7920573696653086769, guid: 2998aa3f4512340fdb5648bbeddc679c, type: 3}
   - {fileID: 6363790887895094179, guid: 196a014f91f13452ba6d7c90d1498982, type: 3}
   m_SpawnVisualizationPrefab: {fileID: 0}
@@ -993,7 +993,7 @@ MonoBehaviour:
   m_ApplyRandomAngleAtSpawn: 1
   m_SpawnAngleRange: 45
   m_SpawnAsChildren: 1
-  m_SpawnHeightOffset: 0.15
+  m_SpawnHeightOffset: 0
 --- !u!4 &436358034
 Transform:
   m_ObjectHideFlags: 0
