@@ -14,6 +14,8 @@ public class UFO : MonoBehaviour
     public GameObject outlineObject;
     public GameObject normalObject;
     
+    private float wiggleTime;
+
     private void Start()
     {
         EnableBeam(true);
@@ -50,6 +52,19 @@ public class UFO : MonoBehaviour
         }
     }
     
+    void Update()
+    {
+        wiggleTime += Time.deltaTime * 2f;
+        float wiggleY = Mathf.Sin(wiggleTime) * 0.01f;
+        float wiggleX = Mathf.Cos(wiggleTime * 0.7f) * 0.006f;
+        transform.position += new Vector3(wiggleX, wiggleY, 0) * Time.deltaTime;
+        transform.rotation = Quaternion.Euler(
+            Mathf.Sin(wiggleTime * 0.5f) * 2f,
+            transform.rotation.eulerAngles.y,
+            Mathf.Cos(wiggleTime * 0.3f) * 2f
+        );
+    }
+    
     private void OnTriggerExit(Collider other)
     {
         if (cow && other.transform == cow)
@@ -65,11 +80,13 @@ public class UFO : MonoBehaviour
     {
         outlineObject.SetActive(true);
         normalObject.SetActive(false);
+        EnableBeam(true);
     }
 
     public void Deselect()
     {
         outlineObject.SetActive(false);
         normalObject.SetActive(true);
+        EnableBeam(false);
     }
 }
