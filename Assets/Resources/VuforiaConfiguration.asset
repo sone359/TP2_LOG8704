@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
-    ufoLicenseKey: QVFCTHQ2bi8vLy8vQUFBQUtMcGxsUzk2eDBFZW41c2Z3MmxzNzNRQVNvMmxCcVZYS1RKSFV2cXl6Ui9tV1VkUmhadkE5VG9zRnpuNTkvdkx4dUNONjlOVlhFaVY4aWd4VnozWUFOMUI2aWdBYTdSWWZuS05JV2tCSVZZWGQ0SFJNa0UrYWhKTSt1TEtDVDhXZ3NjTk11OEtocEJxbk9qbmJ6OGwzTTZZRFZ0RUxUQWJ5R25tb3NieHFLQVgyUnhIRnlQbWQ1MzFNbjhWSGhzZ0VOanFFeEEzcWd4cWQ0R2p3THNFM09keXQ3UnNMdmlZZUxlaGhWTnRtSTNrRjdRRGZXVjFOSjRDQXVOUzlGMmhZQWlGNmdkbGp5Qm5UWE04REJrUVNBaUFWVFN0NHVhTG9DWEJ1MEd3M0hhZEpkNVhhMVhYVXU3RGRncXZsSzJVSHZkSy9vZ3hLTlZrd2thWUtVSzdHSk1rakRrcUIwdjE3YUFmMU55NUJOdTY=
+    vuforiaLicenseKey: AUzOLBr/////AAABmeR3apo8sk9xue05ZUkBuoFUr2cWAZ9U2bAb2WvZaW5fqlCe90DCdkZZ6xPsSo7UiXgEd36grd+pLWlxq+IFJnZoR4LQdZ1Gv/imNxP7luU+9JnrYkjdBBG7dXw6EHSv3AJIB2NSBc/ePOEzJDV5mPt2fzXkK1GLywykk2ROk7RcKTEGbbE1EdnP8HfyEiGlwwMcbGOj1SzlocEKyU7AWOxERazwIP9dcywVt6gG4Z58gUWlcIsnWbvXafFVlic79SK5MkS7g0M7q8mPEQh+ml0uPsdV+Wtmcl+oQwyVxmoXTgQ08kx2mgsufSMK09uHKbi6rDWM1iAIDlf/CWrnx0867s/OCIGH4Jo2KsQPiXG2
+    ufoLicenseKey: QVdjbmdWMy8vLy8vQUFBQUtCTDlKRjNOK0VvbWtKdXd2enI4RWEweFNwdlkzN0Rwb1B6V21TUmVLUmt5OUljWFJzRW5rT3FYcWdsVHRsZStSOVdqWE9MUlFaV1BXT09OVGxnRFJ6NnBCZWozNEV4bDhKUnFieWZCenNVWFZBNDNaVllMSHhHaFBXNDlEZ2tySmdjL2pNZDAxSFB2eU02WENSTTBMYmxTM0s3Q0w2eU1GalBFYllyVUc1cUxzblFaNUsweEs4SEpUd3dnWmM4bFVVMGdiNDFtZ2R2REprK1JBZjA4cnREcXJ3VldYb1l2OXNlaFVHTTJwaEtUdmdVN3RzNWFsWlhUbjgzT1lwY1dSZHp6UERKaFdzbkpZL3MvQW5leS92UUdvZnM1TjFYSmdjRUQySm9CUlRWdi9TZTFDREdpWmNxN1ZoTFJGUGNFejJTdlNyR2g0ZDk3MW1QL1QrYUNFYVY3eFJ1QzhEZGV1dTVnNVZ3Wkdsa00=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -24,20 +24,22 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 11.4.4
-    eulaAcceptedVersions: '{"Values":["11.4"]}'
+    eulaAcceptedVersions: '{"Values":["","11.4","0.0"]}'
   database:
     disableModelExtraction: 0
   plugins:
-    pluginDirectory: asset://Vuforia
+    pluginDirectory: Vuforia
   shaders:
     depthMaskShader: {fileID: 4800000, guid: 9894afa5f3a5e4bbca625981beb1b20e, type: 3}
     outlineShader: {fileID: 4800000, guid: 88d3b6b5cf364476ca39fcec255331b1, type: 3}
-    unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+    unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000,
+      type: 0}
   runtimeResources:
-    register: {fileID: 11400000, guid: 41fc44d3a90764cc7b50f1019f2d8310, type: 2}
+    register: {fileID: 11400000, guid: caeba6ecda451416c803389918ddea4a, type: 2}
   videoBackground:
     numDivisions: 2
-    videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded, type: 3}
+    videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded,
+      type: 3}
     unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
@@ -48,7 +50,8 @@ MonoBehaviour:
   playmode:
     mRecordingPath: 
     playModeType: 0
-    mSimulatorInputActionAsset: {fileID: -944628639613478452, guid: eae7022f5cfd04e8189b1f372421b225, type: 3}
+    mSimulatorInputActionAsset: {fileID: -944628639613478452, guid: eae7022f5cfd04e8189b1f372421b225,
+      type: 3}
   webcam:
     renderTextureLayer: 30
   packageInformation:
