@@ -41,10 +41,14 @@ public class UFO : MonoBehaviour
         if (((1 << other.gameObject.layer) & layerMask) != 0)
         {
             cow = other.transform;
+            cow.parent = null;
             cowRb = other.attachedRigidbody;
-            cowRb.useGravity = false;
-            cowRb.isKinematic = true;
-            cow.position = Vector3.Lerp(cow.position, CowTractionTransform.position, Time.deltaTime * 2f);
+            if (cowRb)
+            {
+                cowRb.useGravity = false;
+                cowRb.isKinematic = true;
+            }
+            cow.position = Vector3.Lerp(cow.position, CowTractionTransform.position, Time.deltaTime * 5f);
             hoverTime += Time.deltaTime * 2f;
             float hover = Mathf.Sin(hoverTime) * 0.001f;
             cow.position += new Vector3(0, hover, 0);
