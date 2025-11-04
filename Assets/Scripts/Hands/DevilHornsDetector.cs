@@ -2,6 +2,7 @@
 using UnityEngine;
 using Mediapipe.Tasks.Vision.HandLandmarker;
 using Mediapipe.Tasks.Components.Containers;
+using System.Collections;
 
 namespace Mediapipe.Unity.Sample.HandLandmarkDetection
 {
@@ -19,14 +20,13 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
             audioSource.playOnAwake = false;
         }
 
-        void OnEnable()
+        private IEnumerator Start()
         {
-            if (handLandmarkerRunner != null)
-            {
-                handLandmarkerRunner.OnHandsDetected += OnHandsDetected;
-                handLandmarkerRunner.StartDetection();
-            }
+            yield return handLandmarkerRunner.Initialize();
+            handLandmarkerRunner.StartDetection();
+            
         }
+        
 
         void OnDisable()
         {
