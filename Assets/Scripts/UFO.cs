@@ -58,6 +58,7 @@ public class UFO : MonoBehaviour
     
     void Update()
     {
+        if (beamEnabled) return;
         wiggleTime += Time.deltaTime * 2f;
         float wiggleY = Mathf.Sin(wiggleTime) * 0.01f;
         float wiggleX = Mathf.Cos(wiggleTime * 0.7f) * 0.006f;
