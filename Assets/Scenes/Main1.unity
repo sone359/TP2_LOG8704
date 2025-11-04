@@ -500,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5129286456902115525, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5205939076486816284, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_Sprite
