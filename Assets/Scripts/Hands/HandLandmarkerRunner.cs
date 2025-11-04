@@ -47,8 +47,7 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
         /// </summary>
         public void StartDetection()
         {
-            if (_isRunning)
-                return;
+            if (_isRunning) return;
 
             if (!_isInitialized)
             {
@@ -77,44 +76,31 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
         }
 
         /// <summary>
-        /// Safely get the AR camera texture, compatible with your shader.
+        /// Safely get the AR camera texture, using the shader property that exists.
         /// </summary>
-        private RenderTexture _cameraRenderTexture;
-
         private Texture GetCameraTexture()
         {
-            if (_arCameraBackground == null)
+            if (_arCameraBackground == null || _arCameraBackground.material == null)
                 return null;
 
             var mat = _arCameraBackground.material;
-            if (mat == null)
-                return null;
 
-            // ARFoundation sets textures dynamically; pick the first active texture
-            var texPropertyNames = new[] { "_MainTex", "_BaseMap", "_CameraTexture" };
-            foreach (var prop in texPropertyNames)
+            // Use shader's actual property
+            if (mat.HasProperty("_TextureSingle"))
             {
-                if (mat.HasProperty(prop))
-                {
-                    var tex = mat.GetTexture(prop);
-                    if (tex != null)
-                    {
-                        // Copy into a RenderTexture for MediaPipe
-                        if (_cameraRenderTexture == null || _cameraRenderTexture.width != tex.width || _cameraRenderTexture.height != tex.height)
-                        {
-                            _cameraRenderTexture?.Release();
-                            _cameraRenderTexture = new RenderTexture(tex.width, tex.height, 0, RenderTextureFormat.ARGB32);
-                            _cameraRenderTexture.Create();
-                        }
-
-                        Graphics.Blit(tex, _cameraRenderTexture);
-                        return _cameraRenderTexture;
-                    }
-                }
+                var tex = mat.GetTexture("_TextureSingle");
+                if (tex != null)
+                    return tex;
             }
 
-            return null;
+            // Fallback to mainTexture if exists
+            if (mat.mainTexture != null)
+                return mat.mainTexture;
+
+            // Still no texture, return white placeholder
+            return Texture2D.whiteTexture;
         }
+
         private IEnumerator RunDetection()
         {
             Debug.Log("🟢 Starting hand landmark detection...");
