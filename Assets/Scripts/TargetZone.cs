@@ -4,7 +4,9 @@ using UnityEngine;
 public class TargetZone : MonoBehaviour
 {
     public LayerMask cowLayerMask;
-
+    public Transform gfx;
+    public LayerMask groundLayerMask;
+    
     private void Start()
     {
         var cowSpawner = FindFirstObjectByType<CowSpawner>();
@@ -27,6 +29,10 @@ public class TargetZone : MonoBehaviour
 
     private void Update()
     {
+        if (Physics.Raycast(transform.position, Vector3.down, out var hit, Mathf.Infinity, groundLayerMask))
+        {
+            gfx.transform.position = hit.point;
+        }
         transform.rotation = Quaternion.identity;
     }
 }
