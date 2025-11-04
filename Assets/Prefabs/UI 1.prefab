@@ -5697,7 +5697,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1243714429374162722, guid: 4adf158126c1640ecbd52af1204f6421, type: 3}
       propertyPath: m_text
-      value: Invoquer une vache
+      value: "Invoquer une zone de d\xE9p\xF4t"
       objectReference: {fileID: 0}
     - target: {fileID: 1243714429374162722, guid: 4adf158126c1640ecbd52af1204f6421, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.size
@@ -5789,7 +5789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2731577115948134737, guid: 4adf158126c1640ecbd52af1204f6421, type: 3}
       propertyPath: m_text
-      value: "Scannez un marqueur pour faire \nappara\xEEtre un vache dessus"
+      value: "Scannez un marqueur pour faire \nappara\xEEtre une zone de d\xE9p\xF4t"
       objectReference: {fileID: 0}
     - target: {fileID: 2731577115948134737, guid: 4adf158126c1640ecbd52af1204f6421, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.size
