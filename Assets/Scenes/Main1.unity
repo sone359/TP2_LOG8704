@@ -188,6 +188,7 @@ MonoBehaviour:
   lightness: 77.3
   gloss: 1
   shadow: 0.831
+  opacity: 0.286
   fill: 1
   ellipseSegments: 16
 --- !u!114 &37147479
@@ -227,7 +228,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37147475}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!114 &68476453 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5895258831092447210, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
@@ -438,13 +439,71 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3293735262945132268, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_text
+      value: 'Selon l''heure, les vaches change de couleur
+
+        minute pair :
+        Blanche
+
+        minute impair : Bleu'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293735262945132268, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_margin.y
+      value: -17.26667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293735262945132268, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293735262945132268, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381910521015431264, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3437457202192987338, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_text
       value: "Scannez un marqueur pour faire \nappara\xEEtre une zone de d\xE9p\xF4t"
       objectReference: {fileID: 0}
+    - target: {fileID: 3776454833579540213, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811330367205300473, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_Name
+      value: clock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974998812530266511, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_text
+      value: "Amenez une soucoupe au-dessus d'une \nvache pour la soulever et la
+        d\xE9placer \nvers la zone de d\xE9pot"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974998812530266511, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_margin.y
+      value: -7.714901
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104562419568937578, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_Name
+      value: Prompt time
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104562419568937578, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5129286456902115525, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205939076486816284, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 76fed2feefdc94c0fb10d64e696ac611, type: 3}
+    - target: {fileID: 5866878656652470164, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_text
+      value: Contenus Dynamique
       objectReference: {fileID: 0}
     - target: {fileID: 6105733976501483526, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_PlaneManager
@@ -458,13 +517,63 @@ PrefabInstance:
       propertyPath: m_InteractionGroup
       value: 
       objectReference: {fileID: 1162368460}
+    - target: {fileID: 6185300110343102159, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 62.634
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185300110343102159, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 63.0014
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185300110343102159, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00000095367
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185300110343102159, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 41.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217793626714664459, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004660951039559443, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337468557024366576, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7838581735318995193, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7908470139462762425, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765104631797469298, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8996813084686348039, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9142379960890737311, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142379960890737311, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -34.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 400358962986751465, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+    - {fileID: 3635375219379751684, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+    - {fileID: 3776695205778326205, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3165362254651726477, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       insertIndex: 1
@@ -820,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: e23306bd0ecd04fa798e491f14019372, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -828,7 +937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a3604c87c89204077b47a6b8080370db, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

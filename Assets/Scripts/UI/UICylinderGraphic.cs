@@ -48,6 +48,7 @@ public class UICylinderGraphic : MaskableGraphic
     [Range(0f, 100f)] public float lightness = 50f;
     [Range(0f, 1f)] public float gloss = 0.35f;
     [Range(0f, 1f)] public float shadow = 0.35f;
+    [Range(0f, 1f)] public float opacity = 0.5f;
 
     [Header("Tank Fill (0..1)")]
     [Range(0f, 1f)]
@@ -58,7 +59,7 @@ public class UICylinderGraphic : MaskableGraphic
     public int ellipseSegments = 64;
 
     // ---------- HSL utility ----------
-    Color Hsl(float h, float s, float l, float a = 0.5f)
+    Color Hsl(float h, float s, float l)
     {
         h = Mathf.Repeat(h, 360f) / 360f;
         s = Mathf.Clamp01(s / 100f);
@@ -70,7 +71,7 @@ public class UICylinderGraphic : MaskableGraphic
         float r = Hue2Rgb(p, q, h + 1f / 3f);
         float g = Hue2Rgb(p, q, h);
         float b = Hue2Rgb(p, q, h - 1f / 3f);
-        return new Color(r, g, b, a);
+        return new Color(r, g, b, opacity);
     }
     float Hue2Rgb(float p, float q, float t)
     {

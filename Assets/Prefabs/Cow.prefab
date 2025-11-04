@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7900091505998077317}
   - component: {fileID: 3454909775686821192}
   - component: {fileID: 8447281406957186639}
+  - component: {fileID: -2819947408682869355}
   m_Layer: 7
   m_Name: Cow
   m_TagString: Untagged
@@ -247,6 +248,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20491a516eae82544b2c16c3ce6280a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2819947408682869355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6532850058587701709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0ac8a8f66114328a7223abc813e8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cowRenderer: {fileID: 0}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  oddMinuteColor: {r: 0, g: 0.03644681, b: 1, a: 1}
+  transitionSpeed: 2
+  checkInterval: 1
+  showDebugLogs: 0
 --- !u!1001 &3216754674606269890
 PrefabInstance:
   m_ObjectHideFlags: 0
