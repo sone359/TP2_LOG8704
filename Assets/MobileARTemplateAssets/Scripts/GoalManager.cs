@@ -292,14 +292,20 @@ namespace UnityEngine.XR.Templates.AR
             int startingStep = m_AllGoalsFinished ? 1 : 0;
 
             var tapSurfaceGoal = new Goal(OnboardingGoals.TapSurface);
+            var scanMarkersGoal = new Goal(OnboardingGoals.FindSurfaces);
             var translateHintsGoal = new Goal(OnboardingGoals.Hints);
+            var abductHintsGoal = new Goal(OnboardingGoals.Hints);
             var scaleHintsGoal = new Goal(OnboardingGoals.Scale);
             var rotateHintsGoal = new Goal(OnboardingGoals.Hints);
+            var gestureHintsGoal = new Goal(OnboardingGoals.Hints);
 
             m_OnboardingGoals.Enqueue(tapSurfaceGoal);
+            m_OnboardingGoals.Enqueue(scanMarkersGoal);
             m_OnboardingGoals.Enqueue(translateHintsGoal);
+            m_OnboardingGoals.Enqueue(abductHintsGoal);
             m_OnboardingGoals.Enqueue(scaleHintsGoal);
             m_OnboardingGoals.Enqueue(rotateHintsGoal);
+            m_OnboardingGoals.Enqueue(gestureHintsGoal);
 
             m_CurrentGoal = m_OnboardingGoals.Dequeue();
             m_AllGoalsFinished = false;
