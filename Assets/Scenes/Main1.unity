@@ -472,6 +472,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4390580672341733522, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_text
+      value: "Bienvenue dans AR UFO Simulator !\n\xCAtes-vous pr\xEAt \xE0 kidnapper
+        \nces pauvres vaches ?"
+      objectReference: {fileID: 0}
     - target: {fileID: 4811330367205300473, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_Name
       value: clock
@@ -495,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5129286456902115525, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5205939076486816284, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_Sprite
@@ -552,6 +557,10 @@ PrefabInstance:
     - target: {fileID: 7908470139462762425, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7974289857821851413, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8765104631797469298, guid: b6178dd5a6bb19740b29018dab2ab7d8, type: 3}
       propertyPath: m_AnchoredPosition.y
