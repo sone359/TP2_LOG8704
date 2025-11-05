@@ -1,5 +1,13 @@
 # AR Project — Instructions de Build & Tests
 
+## Cloner Repo
+
+Il faut en premier lieu cloner le repo github.
+Une fois le repo git cloné, il faut s'assuré d'être sur la branche dev-no-vuforia, du à changement de library et de dépendance, la main est brisé.
+Par la suite, ouvrir Unity Hub, Add -> Add project from disk et sélectionner le dossier TP2_LOG8704.
+
+La editor version utilisé dans ce projet est 6000.0.54f1
+
 ## 🎯 Scène à builder
 La scène à sélectionner pour tester le projet est :
 
